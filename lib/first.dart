@@ -19,8 +19,10 @@ class _FirstScreenState extends State<FirstScreen> {
         children: [
           Center(
             child: Text(
-              Platform.isAndroid ? 'Hello All' : 'Hello Avinash Welcome iOS',
-              style: TextStyle(fontSize: Platform.isAndroid ? 30 : 20),
+              Platform.isAndroid
+                  ? 'Hello Avinash Welcome In Android'
+                  : 'Hello Avinash Welcome iOS',
+              style: TextStyle(fontSize: Platform.isAndroid ? 20 : 30),
             ),
           ),
         ],
