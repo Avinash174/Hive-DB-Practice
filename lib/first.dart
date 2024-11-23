@@ -22,7 +22,17 @@ class _FirstScreenState extends State<FirstScreen> {
               Platform.isAndroid
                   ? 'Hello Avinash Welcome In Android'
                   : 'Hello Avinash Welcome iOS',
-              style: TextStyle(fontSize: Platform.isAndroid ? 20 : 30),
+              textAlign: Platform.isIOS ? TextAlign.center : TextAlign.left,
+              style: TextStyle(
+                fontSize: Platform.isAndroid ? 20 : 30,
+              ),
+            ),
+          ),
+          Text(
+            Platform.isAndroid ? 'by' : 'HELLo',
+            style: TextStyle(
+              fontSize: Platform.isAndroid ? 10 : 20,
+              fontWeight: Platform.isIOS ? FontWeight.w700 : FontWeight.w500,
             ),
           ),
         ],
